@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aula 02 - Pagamento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="bg-light ">
+  <h1 class="mt-5 text-muted">Pagamento</h1>
+  <hr>
+
+  <form action="#" method="post">
+    <div class="container clearfix rounded border border-primary border-3 justify-content-center align-items-center">
+
+        <label for=" numero">Número do Cartão</label> <br>
+        <input class="input-group-text" placeholder="Ex: 1234 1234 1234 1234" minlength="16" maxlength="16" pattern="[0-9]{16}" name="numero" id="numero" required>
+
+
+      <br>
+
+      <label for="titular">Nome do Titular</label> <br>
+      <input class="input-group-text" placeholder="Chiquim da Silva" id="titular" name="titular" required>
+      <br>
+
+      <label for="cpf">CPF</label> <br>
+      <input class="input-group-text" type="text" id="cpf" name="cpf" pattern="[0-9]{11}" placeholder="Ex: 123.123.123-12">
+      <br>
+
+      <label for="mes">Data de validade</label>
+       <div class="input-group mb-3">
+        <select class="input-group-text" name="mes" id="mes">
+          <option selected disabled>-- Mês --</option>
+          <option>Janeiro</option>
+          <option>Fevereiro</option>
+          <option>Março</option>
+        </select>
+        <select class="input-group-text" name="ano" id="ano">
+          <option selected disabled>-- Ano --</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+        </select>
+       </div>
+      <label for="cvv">CVV</label> <br>
+      <input class="input-group-text" type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="Ex: 123">
+      <br>
+
+    </div>
+
+
+    <button class="btn btn-success">Enviar</button>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>FORMULARIO DE VEICULOS</title>
+</head>
+
+<body>
+  <form action="#" method="post">
+    <h1>FORMULARIO DE VEICULOS</h1>
+
+    <label for="placa">PLACA:</label><br>
+    <input id="placa" type="text" required pattern="[A-Z]{3}[0-9]{1}[A-Z0-9]{1}{0-9]{2}">
+    <br><br>
+
+    <label for="marca">MARCA:</label><br>
+    <input id="marca" type="text" name="marca" required>
+    <br><br>
+
+    <label for="ano">ANO:</label><br>
+    <input id="ano" type="number" name="ano" required>
+    <br><br>
+
+    <label for="cor">COR:</label><br>
+    <input id="cor" type="color" name="cor" required>
+    <br><br>
+
+    <label for="versao">VERSÃO:</label><br>
+    <input id="versao" type="text" name="versao" required>
+    <br><br>
+
+    <p>LICENCIADO?</p>
+
+    <input id="sim" type="radio" value="sim" name="opcao" required>
+    <label for="sim">SIM</label><br>
+
+    <input id="nao" type="radio" value="nao" name="opcao" required>
+    <label for="nao">NÃO</label><br><br>
+
+    <button type="submit" name="button">Enviar</button>
+
+  </form>
+</body>
+
+</html>

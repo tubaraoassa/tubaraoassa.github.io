@@ -1,0 +1,32 @@
+button {
+  height: 50px;
+  min-width: 100px;
+  border: 1px solid #333333;
+
+  /*
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333333;
+  */
+
+  border-radius: 10px;
+}
+
+
+button.bg-azul {
+  background-color: #4c85aa;
+}
+
+button.bg-vermelho {
+  background-color: #C62736;
+  color: #FFFFFF;
+}
+
+button.bg-vermelho:hover {
+  background-color: #761720;
+}
+
+
+button.bg-verde {
+  background-color: #3d743f;
+}

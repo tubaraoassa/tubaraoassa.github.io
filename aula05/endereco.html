@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>ENDERECO</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <section class="card card-body mt-5">
+    <h1 >ENDEREÇO</h1>
+    <hr>
+    <form action="#" method="post">
+
+      <label for="cep">CEP:</label><br>
+      <input class="form-control" placeholder="Ex: 60333000" id="cep" type="text" minlength="8" maxlength="8" pattern="[0-9]{8}" name="cep">
+      <br>
+
+      <label for="logradouro">Logradouro:</label><br>
+      <input class="form-control" placeholder="Ex: Avenida, Rua, Travessa" id="logradouro" type="text" name="logradouro">
+      <br>
+
+      <label for="numero">Numero:</label><br>
+      <input class="form-control" placeholder="123" id="numero" type="number" name="numero">
+      <br>
+
+      <label for="bairro">Bairro:</label><br>
+      <input class="form-control" placeholder="BAIRRO" id="bairro" type="text" name="bairro">
+      <br>
+
+      <label for="cidade">Cidade:</label><br>
+      <input class="form-control" placeholder="CIDADE" id="cidade" type="text" name="cidade">
+      <br>
+
+      <label for="estado">Estado:</label><br>
+      <input  class="form-control" placeholder="ESTADO" id="estado" type="text" name="estado">
+      <br>
+
+      <button style="width:100%" class="btn btn-success" type="submit" name="enviar">ENVIAR</button>
+  </section>
+  </form>
+
+</body>
+
+</html>

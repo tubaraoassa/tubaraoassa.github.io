@@ -1,0 +1,22 @@
+button {
+  height: 50px;
+  border: 1px solid#333333;
+  min-width: 100px;
+  border-radius: 10px;
+}
+
+button.bt_azul {
+  background-color: #061ef6
+}
+
+button.bt_verde {
+  background-color: #08ff37
+}
+
+button.bt_vermelho {
+  background-color: #e91414
+}
+
+button.bt_vermelho:hover {
+  background-color: #674653
+}

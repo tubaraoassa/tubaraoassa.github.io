@@ -1,0 +1,79 @@
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.google {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    color: #636363;
+    font-size: 36px;
+    font-weight: 90;
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.containe1 {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.login-text {
+    color: #636363;
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.field {
+    width: 300px;
+    margin-top: 100px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 2px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profil-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+}
+.input {
+    width: 240px;
+    padding: 5px 20px;
+    display: block;
+    margin: 0px auto;
+    align: center
+}
+
+.button {
+    background-color: #0E86E3;
+    display: block;
+    width: 285px;
+    padding: 5px 20px;
+    margin: 20px auto;
+    color:#fff;
+    align: center
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.account {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0E86E3;
+}

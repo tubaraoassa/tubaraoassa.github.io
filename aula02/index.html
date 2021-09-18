@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>CADASTRO DE ALUNO</h1>
+  <hr>
+  <form action="#" method="post">
+
+    <input type="hidden" name="token" value="1q2w3e4r">
+
+    <label for="nome">Oi, qual seu nome?</label><br>
+    <input id="nome" type="text" name="Nome" required>
+    <br><br>
+
+    <label for="email">Ok, qual seu e-mail?</label><br>
+    <input id="email" type="email" name="Email" required>
+    <br><br>
+
+    <label for="idade">Qual sua idade?</label><br>
+    <input id="idade" type="number" min="10" max="90" name="idade" required>
+    <br><br>
+
+    <label for="fone">Telefone:</label><br>
+    <input id="fone" name="fone" minlength="11" maxlength="11" required>
+    <br><br>
+
+    <label for="senha">Informe uma senha:</label><br>
+    <input id="password" type="password" placeholder="Insire pelo menos 8 ca
+racteres" minlength="8" maxlength="11" name="senha" required>
+    <br><br>
+
+    <label for="placa">Placa do seu veiculo?</label><br>
+    <input id="placa" type="text" pattern="[A-Z]{3}[0-9]{1}[A-Z0-9]{1}{0-9]{2}">
+
+    <hr>
+
+    <label for="nascimento">Data de nascimento:</label><br>
+    <input id="nascimento" type="date" name="nascimento">
+    <br><br>
+
+    <label for="agendamento">Hora do agendamento:</label><br>
+    <input id="agendamento" type="time" name="agendamento">
+    <br><br>
+
+    <label for="cor">Cor preferida?</label><br>
+    <input id="cor" type="color" name="cor">
+    <br><br>
+
+    <p>Qual turno?</p><br>
+    <input id="turno" type="radio" value="08:00 as 12:00" name="turno" required checked>
+    <label for="manha">Manhã</label><br>
+
+    <input id="turno" type="radio" value="12:00 as 17:00" name="turno" required>
+    <label for="tarde">Tarde</label><br>
+
+    <input id="turno" type="radio" value="18:00 as 22:00" name="turno" required>
+    <label for="noite">Noite</label><br>
+
+    <p>Quais cursos você quer fazer?</p>
+    <input type="checkbox" name="cursos[]" id="php" value="PHP">
+    <label for="php">PHP</label>
+    <br>
+
+    <input type="checkbox" name="cursos[]" id="js" value="Javascript">
+    <label for="js">Javascript</label>
+    <br>
+
+    <input type="checkbox" name="cursos[]" id="PHP" value="Python">
+    <label for="python">Python</label>
+    <br>
+
+    <hr>
+
+    <label for="foto">Mande uma foto pro perfil:</label><br>
+    <input type="file" name="foto" id="foto">
+    <br><br>
+
+    <label for="avaliacao">Avalie nosso formulario:</label>
+    0<input type="range" name="avaliacao" size="10" step="1">
+    <br><br>
+
+    <label for="cidade">Informe sua cidade</label>
+    <select name="cidade" id="cidade" required>
+      <optgroup label="Ceará">
+        <option disabled selected>--Selecione --</option>
+        <option value="">Fortaleza</option>
+        <option value="">Caucaia</option>
+        <option value="">Maracanau</option>
+        <option value="">Eusebio</option>
+        <option value="">Itaitinga</option>
+      </optgroup>
+      <optgroup label="São Paulo">
+        <option value="">São Paulo</option>
+        <option value="">Santos</option>
+        <option value="">Guarulhos</option>
+      </optgroup>
+    </select>
+    <br><br>
+
+    <label for="obs">Observações:</label>
+    <textarea name="obs" id="obs" placeholder="Digite aqui...">Digite aqui...</textarea>
+    <br><br>
+
+    <!-- <button type="reset" name="button">Limpar dados</button> -->
+    <button type="submit" name="button">Enviar</button>
+  </form>
+</body>
+
+</html>

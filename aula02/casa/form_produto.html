@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulario de produto</title>
+</head>
+
+<body>
+  <form action="#" method="post">
+    <h1>Cadastro de Produtos</h1>
+    <label for="img_prod">IMAGEM DO PRODUTO:</label><br>
+    <input type="file" name="img_prod" id="img_prod" accept="image/*" required>
+    <br><br>
+
+    <label for="nome">NOME DO PRODUTO:</label><br>
+    <input id="nome" type="text" name="Nome" placeholder="Bolacha, Vinho, Café... " required>
+    <br><br>
+
+    <label for="cidade">CATEGORIA:</label>
+    <select name="categoria" id="categoria" required>
+      <optgroup label="Cafe:">
+        <option disabled selected>--Selecione --</option>
+        <option value="Cafe1">Cafe1</option>
+        <option value="Cafe2">Cafe2</option>
+        <option value="Cafe3">Cafe3</option>
+      </optgroup>
+      <optgroup label="Bolacha">
+        <option value="Bolacha1">Bolacha1</option>
+        <option value="Bolacha2">Bolacha2</option>
+        <option value="Bolacha3">Bolacha3</option>
+      </optgroup>
+    </select>
+    <br><br>
+
+    <label for="preco">PREÇO:</label><br>
+    <input placeholder="R$ 123,12" id="preco" type="number" name="preco" required>
+    <br><br>
+
+    <label for="quantidade">QUANTIDADE:</label><br>
+    <input id="quantidade" type="number" name="quantidade" required>
+    <br><br>
+
+    <label for="obs">Observações:</label><br>
+    <textarea name="obs" id="obs" placeholder="Digite aqui...">Digite aqui...</textarea>
+    <br><br>
+
+    <button type="submit" name="button">Enviar</button>
+
+
+  </form>
+</body>
+
+</html>

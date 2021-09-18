@@ -1,0 +1,79 @@
+:root {
+  --azul-padrao:#166fe5;
+  --cinza-padrao:#dedede;
+  --tamanho-fonte:1.3rem;
+}
+body{
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.lado-esquerdo,.lado-esquerdo{
+vertical-align: middle;
+  display: grid;
+
+}
+
+
+.lado-esquerdo img{
+  width: 200px
+
+}
+
+.lado-esquerdo article{
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px
+  5px
+  rgba( 0, 0, 0, 0.25);
+  padding: 15px;
+}
+input:focus{
+  border: 1px solid #166fe5;
+  outline: none;
+}
+
+input{
+  display: block;
+  height: 50px;
+  border: 1px solid #999;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+button {
+  height: 50px;
+  display: block;
+  width: 100%;
+  border: 0;
+}
+a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #166fe5;
+  margin: 20px 0;
+}
+.btn-entrar{
+  background-color:
+  color:
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+.btn-cadastrar{
+  background-color: #36a420;
+ color: #FFF;
+ font-size: 1.3rem;
+ width: auto;
+ margin: auto;
+ border-radius: 5px;
+}
+hr{
+  color: #eee;
+
+}
+a:hover{
+  text-decoration: underline;
+}
