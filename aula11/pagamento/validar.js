@@ -48,6 +48,9 @@ INPUT_NUMERO.addEventListener('keyup', function () {
   if (INPUT_NUMERO.value.length === 19) {
     INPUT_NUMERO.classList.add('is-valid');
   }
+  else {
+    INPUT_NUMERO.classList.add('is-invalid');
+  }
 });
 
 INPUT_TITULAR.addEventListener('keyup', function () {
@@ -64,6 +67,9 @@ INPUT_CPF.addEventListener('keyup', function () {
   if (INPUT_CPF.value.length === 14) {
     INPUT_CPF.classList.add('is-valid');
   }
+  else {
+    INPUT_CPF.classList.add('is-invalid');
+  }
 });
 
 INPUT_CVV.addEventListener('keyup', function () {
@@ -71,6 +77,9 @@ INPUT_CVV.addEventListener('keyup', function () {
 
   if (INPUT_CVV.value.length === 3) {
     INPUT_CVV.classList.add('is-valid');
+  }
+  else {
+    INPUT_CVV.classList.add('is-invalid');
   }
 });
 

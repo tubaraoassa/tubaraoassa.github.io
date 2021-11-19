@@ -44,7 +44,7 @@ INPUT_NUMERO.addEventListener('keyup', function () {
   }
 
   if (INPUT_NUMERO.value === '') {
-    CARD_NUMERO.innerHTML = '0000 0000 0000 0000';
+    CARD_NUMERO.innerHTML  = '0000 0000 0000 0000';
   }
 });
 
