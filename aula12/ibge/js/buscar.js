@@ -17,11 +17,11 @@ fetch(URL_REGIAO)
     alert('Vish, algum problema aconteceu, tente de novo.');
   });
 
+//regiao pra estado
 SELECT_REGIAO.addEventListener('change', () => {
-
   let regiaoId = SELECT_REGIAO.value;
 
-  SELECT_ESTADO.innerHTML = '<option> -- Selecione -- </option>';
+  SELECT_ESTADO.innerHTML = `<option> --Selecione -- </option>`;
 
   fetch(urlEstados(regiaoId))
     .then((resposta) => resposta.json())
@@ -30,20 +30,17 @@ SELECT_REGIAO.addEventListener('change', () => {
         SELECT_ESTADO.innerHTML += `<option value="${cadaEstado.id}">${cadaEstado.nome}</option>`;
       });
     });
-
 });
 
+//estado pra cidades
 SELECT_ESTADO.addEventListener('change', () => {
   let estadoId = SELECT_ESTADO.value;
 
-  SELECT_CIDADE.innerHTML = `<option>-- Carregando --</option>`;
+  SELECT_CIDADE.innerHTML = `<option>-- Selecione --</option>`;
 
   fetch(urlCidades(estadoId))
     .then(response => response.json())
     .then(cidades => {
-      //chegou ate aqui, é porque trouxe alguma coisa
-      SELECT_CIDADE.innerHTML = `<option>-- Selecione --</option>`;
-
       cidades.forEach(cadaCidade => {
         SELECT_CIDADE.innerHTML += `<option>${cadaCidade.nome}</option>`;
       })
