@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>aula 12 ibge</title>
-    <!-- CSS only -->
+    <title>Aula 12 - Form de Endereço</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   </head>
   <body class="container">
-    <h1 class="mt-5">ENDERECO</h1>
-    <hr>
-    <form  action="#" >
-      <label for="regiao">REGIAO</label>
-      <select class="form-control" id="regiao">
-        <option>--selecione--</option>
-      </select>
-      <br>
-      <label for="estado">ESTADO</label>
-      <select class="form-control" id="estado">
-        <option>--selecione--</option>
-      </select>
-      <br>
-      <label for="cidade">CIDADE</label>
-      <select class="form-control" id="cidade">
-        <option>--selecione--</option>
-      </select>
-      <br>
+      <h1 class="mt-5">Endereço</h1>
+      <hr>
 
-      <button class="btn btn-primary">ENVIAR</button>
-    </form>
+      <form action="">
+        <label for="regiao">Região</label>
+        <select id="regiao" class="form-control">
+          <option> -- Selecione -- </option>
+        </select>
+        <br>
 
+        <label for="estado">Estado</label>
+        <select id="estado" class="form-control">
+          <option>-- Selecione --</option>
+        </select>
+        <br>
+
+        <label for="cidade">Cidade</label>
+        <select id="cidade" class="form-control">
+          <option>-- Selecione --</option>
+        </select>
+        <br>
+
+        <button class="btn btn-primary">Enviar</button>
+      </form>
+
+      <script src="js/buscar.js"></script>
   </body>
-  <script src="js/buscar.js"></script>
 </html>

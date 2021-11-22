@@ -4,10 +4,11 @@ const INPUT_NUMERO = document.getElementById('numero');
 const INPUT_BAIRRO = document.getElementById('bairro');
 const INPUT_CIDADE = document.getElementById('cidade');
 const INPUT_UF = document.getElementById('uf');
+const INPUT_BUTTON = document.getElementById('button')
 
 //chamar API correios
 
-INPUT_CEP.addEventListener('blur', () => {
+INPUT_BUTTON.addEventListener('click',  () => {
   if (INPUT_CEP.value.length < 8) {
     return;
   }
@@ -54,7 +55,7 @@ INPUT_LOGRADOURO.addEventListener('keyup', function (){
 INPUT_NUMERO.addEventListener('keyup', function (){
   INPUT_NUMERO.classList.remove('is-invalid');
 
-if (INPUT_NUMERO.value >= 0) {
+if (INPUT_NUMERO.value.length > 0) {
   INPUT_NUMERO.classList.add('is-valid');
 }
 else {
